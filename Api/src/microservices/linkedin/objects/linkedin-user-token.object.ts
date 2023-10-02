@@ -1,6 +1,6 @@
 import { IsNumber, IsString } from "class-validator";
 
-export class LoginLinkedinResponseObject {
+export class LinkedInUserTokenObject {
     @IsString()
     accessToken: string;
 
