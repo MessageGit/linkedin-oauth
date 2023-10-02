@@ -1,5 +1,21 @@
 .App {
+  margin: 24px 0;
   text-align: center;
-  background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
+.LinkedIn_Button {
+  padding: 4px 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.LinkedIn_Button .LinkedIn_Icon {
+  position: relative;
+  width: 24px; height: 24px;
+}
+.LinkedIn_Button span {
+  margin: 0 0 0 12px;
+}
