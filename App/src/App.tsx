@@ -14,7 +14,7 @@ function App() {
 
   /* Handle the client redirection to LinkedIn authentication portal */
   const onSignInLinkedIn = () => {
-    window.open(`https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${LINKEDIN_ENV.CLIENT_ID}&scope=${LINKEDIN_ENV.SCOPES}&redirect_uri=${LINKEDIN_ENV.REDIRECT_URI}`, '_blank');
+    window.location.replace(`https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${LINKEDIN_ENV.CLIENT_ID}&scope=${LINKEDIN_ENV.SCOPES}&redirect_uri=${LINKEDIN_ENV.REDIRECT_URI}`);
   }
 
   /* Check if a Linkedin authorization code is provided */
