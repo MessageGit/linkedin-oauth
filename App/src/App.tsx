@@ -67,7 +67,7 @@ const App = () => {
               <span>Avant toutes choses,<br /><br />Soyez sûre que les variables d'environnement de l'application <i>(fichier <code>.env</code> à la racine du projet)</i>:
               &nbsp;<code>REACT_APP_LINKEDIN_CLIENT_ID</code>, <code>REACT_APP_LINKEDIN_SCOPES</code>,
               &nbsp;ainsi que <code>REACT_APP_LINKEDIN_REDIRECT_URI</code> soient dûement renseignées par les données fournies par&nbsp; 
-              <a href="https://www.linkedin.com/developers/apps" target="_blank">LinkedIn Developers</a> pour votre application.
+              <a href="https://www.linkedin.com/developers/apps" target="_blank" rel="noreferrer">LinkedIn Developers</a> pour votre application.
               <br /><br />Il en va de même pour les variables d'environnement de l'API, à savoir : <code>LINKEDIN_API_CLIENT_ID</code>,
               &nbsp;<code>LINKEDIN_API_CLIENT_SECRET</code>,
               &nbsp;ainsi que <code>LINKEDIN_API_REDIRECT_URI</code></span>.
