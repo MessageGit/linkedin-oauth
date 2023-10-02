@@ -22,6 +22,9 @@ function App() {
   useEffect(() => {
     if (authorizationCode) {
       // TODO: Send authorization code to server for validity check
+      API.post('linkedin/auth/login', { authorization_code: authorizationCode })
+        .then((res) => console.log('res', res))
+        .catch((err) => console.log('err', err));
     }
   }, [authorizationCode]);
 
