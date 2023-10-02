@@ -1,10 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 
 /* NestJS Config */
 import { ConfigModule } from '@nestjs/config';
 import { config } from './config/config';
+
+/* Imported modules */
+import { LinkedInModule } from './microservices/linkedin/linkedin.module';
 
 @Module({
   imports: [
@@ -12,8 +13,9 @@ import { config } from './config/config';
       isGlobal: true,
       load: [config]
     }),
+    LinkedInModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
