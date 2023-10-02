@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import API from './api/api';
 import './App.css';
 
 import LinkedInIcon from './assets/linkedin_icon.png';
