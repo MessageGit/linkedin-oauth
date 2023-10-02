@@ -16,7 +16,7 @@ async function bootstrap() {
   const port = configService.get<number>('port');
 
   await app.listen(port, '0.0.0.0');
-  console.log(`\n\n\x1b[34m > 🚀 Server is running on: ${await app.getUrl()}`);
+  console.log(`\n\n\x1b[34m🚀 Server is now available at the \x1b[37m${await app.getUrl()}\x1b[34m address!\x1b[0m`);
 }
 
 bootstrap();
