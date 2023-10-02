@@ -62,10 +62,22 @@ const App = () => {
             </div>
           </div>
         ) : ( /* Sign-in with LinkedIn */
-          <button className="LinkedIn_Button" onClick={onSignInLinkedIn}>
-            <img src={LinkedInIcon} alt="Logo LinkedIn" className="LinkedIn_Icon" />
-            <span>Se connecter via LinkedIn</span>
-          </button>
+          <div className="Signin_Content">
+            <div className="Information">
+              <span>Avant toutes choses,<br /><br />Soyez sûre que les variables d'environnement de l'application <i>(fichier <code>.env</code> à la racine du projet)</i>:
+              &nbsp;<code>REACT_APP_LINKEDIN_CLIENT_ID</code>, <code>REACT_APP_LINKEDIN_SCOPES</code>,
+              &nbsp;ainsi que <code>REACT_APP_LINKEDIN_REDIRECT_URI</code> soient dûement renseignées par les données fournies par&nbsp; 
+              <a href="https://www.linkedin.com/developers/apps" target="_blank">LinkedIn Developers</a> pour votre application.
+              <br /><br />Il en va de même pour les variables d'environnement de l'API, à savoir : <code>LINKEDIN_API_CLIENT_ID</code>,
+              &nbsp;<code>LINKEDIN_API_CLIENT_SECRET</code>,
+              &nbsp;ainsi que <code>LINKEDIN_API_REDIRECT_URI</code></span>.
+              <br /><br />PS : L'URI de redirection de l'application ainsi que celle de l'API doivent être identiques et préalablement approuvées depuis le panel de votre application LinkedIn. Les scopes renseignés doivent également être autorisés.
+            </div>
+            <button className="LinkedIn_Button" onClick={onSignInLinkedIn}>
+              <img src={LinkedInIcon} alt="Logo LinkedIn" className="LinkedIn_Icon" />
+              <span>Se connecter via LinkedIn</span>
+            </button>
+          </div>
         )}
 
     </div>

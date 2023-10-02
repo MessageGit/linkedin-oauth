@@ -67,7 +67,20 @@
 }
 
 /* Sign-in with LinkedIn (button) */
+.Signin_Content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Information {
+  font-size: 12px;
+}
+.Information code {
+  background-color: #e7e7e7;
+}
 .LinkedIn_Button {
+  margin: 24px 0 0 0;
   padding: 4px 12px;
   position: relative;
   width: fit-content;
