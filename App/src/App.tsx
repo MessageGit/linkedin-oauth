@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import API from './api/api';
-import './App.css';
 
 import LinkedInIcon from './assets/linkedin_icon.png';
 
@@ -26,7 +25,6 @@ const App = () => {
   const authorizationCode = new URLSearchParams(window.location.search).get('code');
   useEffect(() => {
     if (authorizationCode) {
-      // TODO: Send authorization code to server for validity check
       setIsLoading(true);
       API.post('linkedin/auth/login', { authorization_code: authorizationCode })
         .then((res) => {
@@ -43,7 +41,7 @@ const App = () => {
   return (
     <div className="App">
 
-      {isLoading ? (
+      {isLoading ? ( /* Loading */
         <div className="Loading">
           <div className="Progress_Bar">
             <div className="Circle Border">
